@@ -24,7 +24,7 @@ PYTHONPATH=. ./unstructured/ingest/main.py \
     --metadata-exclude filename,file_directory,metadata.data_source.date_processed \
     --preserve-downloads \
     --recursive \
-    --remote-url "dropbox:// /" \
+    --remote-url "dropbox://nested-1" \
     --reprocess \
     --structured-output-dir "$OUTPUT_DIR"
 
