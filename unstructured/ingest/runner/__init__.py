@@ -16,6 +16,7 @@ from .onedrive import onedrive
 from .outlook import outlook
 from .reddit import reddit
 from .s3 import s3
+from .salesforce import salesforce
 from .slack import slack
 from .wikipedia import wikipedia
 
@@ -38,6 +39,7 @@ __all__ = [
     "outlook",
     "reddit",
     "s3",
+    "salesforce",
     "slack",
     "wikipedia",
 ]

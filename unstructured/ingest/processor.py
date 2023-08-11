@@ -76,17 +76,17 @@ class Processor:
 
         # Debugging tip: use the below line and comment out the mp.Pool loop
         # block to remain in single process
-        # self.doc_processor_fn(docs[0])
+        self.doc_processor_fn(docs[0])
         logger.info(f"Processing {len(docs)} docs")
-        try:
-            with mp.Pool(
-                processes=self.num_processes,
-                initializer=ingest_log_streaming_init,
-                initargs=(logging.DEBUG if self.verbose else logging.INFO,),
-            ) as pool:
-                pool.map(self.doc_processor_fn, docs)
-        finally:
-            self.cleanup()
+        # try:
+        #     with mp.Pool(
+        #         processes=self.num_processes,
+        #         initializer=ingest_log_streaming_init,
+        #         initargs=(logging.DEBUG if self.verbose else logging.INFO,),
+        #     ) as pool:
+        #         pool.map(self.doc_processor_fn, docs)
+        # finally:
+        #     self.cleanup()
 
 
 def process_documents(
