@@ -85,6 +85,7 @@ class DiscordIngestDoc(IngestDocCleanupMixin, BaseIngestDoc):
         if self.config.verbose:
             logger.debug(f"fetching {self} - PID: {os.getpid()}")
         messages: List[discord.Message] = []
+        # breakpoint()
         intents = discord.Intents.default()
         intents.message_content = True
         bot = commands.Bot(command_prefix=">", intents=intents)
@@ -106,6 +107,8 @@ class DiscordIngestDoc(IngestDocCleanupMixin, BaseIngestDoc):
                 await bot.close()
 
         bot.run(self.token)
+
+        # breakpoint()
 
         with open(self._tmp_download_file(), "w") as f:
             for m in messages:

@@ -116,6 +116,7 @@ class ElasticsearchIngestDoc(IngestDocCleanupMixin, BaseIngestDoc):
             index=self.config.index_name,
             id=self.file_meta.document_id,
         ).body["_source"]
+        breakpoint() ####### a dictionary comes in here.
         if self.config.jq_query:
             document_dict = json.loads(jq.compile(self.config.jq_query).input(document_dict).text())
         self.document = self._concatenate_dict_fields(document_dict)

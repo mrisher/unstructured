@@ -20,7 +20,6 @@ PYTHONPATH=. ./unstructured/ingest/main.py \
     elasticsearch \
     --download-dir "$DOWNLOAD_DIR" \
     --metadata-exclude filename,file_directory,metadata.data_source.date_processed,metadata.last_modified \
-    --num-processes 2 \
     --preserve-downloads \
     --reprocess \
     --structured-output-dir "$OUTPUT_DIR" \

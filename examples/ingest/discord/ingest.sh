@@ -9,9 +9,11 @@ cd "$SCRIPT_DIR"/../../.. || exit 1
 
 PYTHONPATH=. ./unstructured/ingest/main.py \
         discord \
-        --channels 12345678 \
+        --channels 1099442333440802930,1099601456321003600 \
         --token "$DISCORD_TOKEN" \
         --download-dir discord-ingest-download \
         --structured-output-dir discord-example \
         --preserve-downloads \
+        --reprocess \
+        --period 1000 \
         --verbose

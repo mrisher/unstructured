@@ -1,0 +1,23 @@
+[
+  {
+    "type": "UncategorizedText",
+    "element_id": "b13cfc7d9766f5320c1f53d780a55d9f",
+    "metadata": {
+      "data_source": {
+        "date_processed": "2023-08-12T23:11:22.747666"
+      },
+      "filename": "hello.eml",
+      "file_directory": "/Users/davidpotter/.cache/unstructured/ingest/139c29add8",
+      "last_modified": "2022-12-16T17:04:16-05:00",
+      "filetype": "message/rfc822",
+      "sent_from": [
+        "potterdavidm@gmail.com"
+      ],
+      "sent_to": [
+        "shellyb@westerntelecom.com"
+      ],
+      "subject": "test 2"
+    },
+    "text": "Whats up? No love?\n\n_____________________________________________________________________\nPowered by Salesforce\nhttp://www.salesforce.com/"
+  }
+]

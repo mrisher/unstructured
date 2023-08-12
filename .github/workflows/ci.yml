@@ -223,6 +223,7 @@ jobs:
         make install-ingest-gitlab
         make install-ingest-onedrive
         make install-ingest-outlook
+        make install-ingest-salesforce
         make install-ingest-slack
         make install-ingest-wikipedia
         ./test_unstructured_ingest/test-ingest.sh
